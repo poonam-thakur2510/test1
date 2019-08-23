@@ -214,3 +214,12 @@ comment_form( $comments_args );
 
 
 
+
+
+	function company_customlogo() {
+		add_theme_support( 'custom-logo', array(
+			 'width'       => 400,
+			'height'      => 400,
+		) );
+	}
+	add_action( 'after_setup_theme', 'company_customlogo', 11 );
